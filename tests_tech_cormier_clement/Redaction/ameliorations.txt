@@ -1,0 +1,12 @@
+Pour pouvoir améliorer les différents traitements, on peut tout d'abord, ajouter des fonctions de contrôles des entrées.
+Ces fonctions permettraient d'éviter que des incidents se produisent notamment lorsque l'utilisateur précise un enregistrement et une position du champ. On peut vérifier dans un premier temps que le n-ième champ existe.
+
+Pour la partie tri, je pense qu'il y a moyen de gérer différemment. Je suis parti du principe que chaque client avait exactement le même nombre de données mais il s'est avéré que non.
+Je n'avais pas découpé les clients selon les différentes lignes donc tel indice de tel enregistrement ne désignait pas forcément la même colonne pour deux clients différents.
+J'ai pu contourner le problème en séparant la partie à trier puis en gardant pour chacune des données, le lien vers la donnée client complète mais il y a probablement moyen de raisonner plus efficacement.
+
+Il y a également probablement la possibilité d'optimiser les traitements pour gagner en vitesse d'exécution.
+Il y a un certain nombre de boucles dont des boucles imbriquées et le temps d'exécution pourrait considérablement augmenter si le volume de données augmente de façon importante.
+
+Un dernier point d'amélioration est peut-être la façon dont je découpe les fichiers d'entrées en utilisant les différents séparateurs.
+Cela me permet bien d'obtenir des listes de données facilement exploitables mais me cela me force à re-formater les données pour m'assurer que les fichiers de sorties aient la même forme que les fichiers d'entrées.
